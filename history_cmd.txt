@@ -1,0 +1,23 @@
+   88  cat > Домашние_животные.txt <<EOL
+Собаки
+Кошки
+Хомяки
+EOL
+
+   89  cat > Вьючные_животные.txt <<EOL
+Лошади
+Верблюды
+Ослы
+EOL
+
+   90  cat Домашние_животные.txt Вьючные_животные.txt > Все_животные.txt
+   91  cat Все_животные.txt
+   92  mv Все_животные.txt Друзья_человека.txt
+   93  mkdir Животные
+   94  mv Друзья_человека.txt Животные/
+   95  sudo apt update
+   96  sudo apt install software-properties-common
+   97  sudo add-apt-repository ppa:ondrej/php
+   98  sudo apt install mysql-server
+   99  sudo dpkg -i wget.deb
+  100  sudo dpkg -r wget
